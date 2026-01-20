@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réservation</title>
+    <link rel="stylesheet" href="/Space-Travel/style/reservation.css">
 </head>
 <body>
     <!--DEBUT DU HEADER-->
@@ -25,6 +26,70 @@
     </header>
     <!--FIN DU HEADER-->
     <main>
+        <!--DEBUT DU FORMULAIRE-->
+        <section>
+            <p class="reservationForm">
+                <h2>Réserver un voyage</h2>
+                <form method="get" action="">
+                    <div class="infoContainerForm">
+                        <p class="infoForm">
+                            <label for="name">Votre nom</label>
+                            <input type="text" name="name" id="name">
+                            <label for="firstname">Votre prénom</label>
+                            <input type="text" name="firstname" id="firstname">
+                            <label for="email">Votre email</label>
+                            <input type="email" name="email" id="email">
+                            <label for="date-of-birth">Votre date de naissance</label>
+                            <input type="date" name="date-of-birth" id="date-of-birth">
+                        </p>
+                        <p class="infoForm">
+                            <label for="formula">Quelle formule vous intéresse?</label> <!--En attente des noms des formules-->
+                            <select name="formula" id="formula">
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </p>
+                        <p class="infoForm">
+                            Quelle option vous intéresse ? <!--En attente des noms des options-->
+                            <label for="options"></label>
+                            <input type="checkbox">
+                        </p>
+                        <p class="infoForm">
+                            <label for="number-of-travellers">Le nombre de voyageurs</label>
+                            <input type="number" name="number-of-travellers" id="number-of-travellers" min="1" max="8">
+                        </p>
+                        <button type="submit" class="buttonForm">Envoyer</button>
+                    </div>
+                </form>
+            </p>
+        </section>
+        <!--FIN DU FORMULAIRE-->
     </main>
+    <footer>
+        <div class="footer-social">
+            <h3>Suivez nous sur:</h3>
+            <img src="images/icon_social_facebook_dark_9d7616bf.svg" alt="">
+            <img src="images/icon_social_instagram_dark_b5f8e532.svg" alt="">
+            <img src="images/twitter_x_logo_ff25ea4d.svg" alt="">
+        </div>
+        <div class="footer-nav">
+            <img class="logo-nav" src="images/logo.png" alt="logo">
+            <div class="footer-link">
+                <ul>
+                    <li>Mentions légales</li>
+                    <li>Politique de confidentialité</li>
+                    <li>Gestion des données</li>
+                    <li>Gestion des cookies</li>
+                    <li>À Propos</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; Space Travel. Tous droits réservés.</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,17 @@
+/*DEBUT DU HEADER*/
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.headerNav ul{
+    display: flex;
+    gap: 35px;
+}
+/*FIN DU HEADER*/

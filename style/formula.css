@@ -188,4 +188,45 @@
 .toggle-desc-soleil:checked ~ .description-box-soleil {
   max-height: fit-content;
   padding: 15px;
+/*DEBUT DU HEADER*/
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.headerNav ul{
+    display: flex;
+    gap: 35px;
+}
+/*FIN DU HEADER*/
+/*------------ MISE EN FORME TABLEAU--------------*/
+.formule{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+table{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+td img{
+    width: 10%;
+}
+tr{
+    text-align: center;
+}
+td{
+    border-bottom: dotted 1px;
+}
+.tableHeader{
+    color: aqua;
+}
+.formuleChart{
+    width: 40%;
 }

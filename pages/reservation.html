@@ -18,7 +18,7 @@
                 <ul>
                     <li><a href="#">Accueil</a></li>
                     <li><a href="formules.html">Nos formules</a></li>
-                    <li><a href="réservation.html">Réservation</a></li>
+                    <li><a href="reservation.html">Réservation</a></li>
                 </ul>
             </nav>
         </div>
@@ -45,17 +45,22 @@
                         <p class="infoForm">
                             <label for="formula">Quelle formule vous intéresse?</label> <!--En attente des noms des formules-->
                             <select name="formula" id="formula">
-                                <option value=""></option>
-                                <option value=""></option>
-                                <option value=""></option>
-                                <option value=""></option>
-                                <option value=""></option>
+                                <option value="sun">Soleil</option>
+                                <option value="mercury">Mercure</option>
+                                <option value="venus">Vénus</option>
+                                <option value="mars">Mars</option>
                             </select>
                         </p>
                         <p class="infoForm">
-                            Quelle option vous intéresse ? <!--En attente des noms des options-->
-                            <label for="options"></label>
-                            <input type="checkbox">
+                           <p class="radioQuestion">Quelle option vous intéresse ?</p><!--En attente des noms des options-->
+                            <div class="radioForm">
+                                <label for="formule">Simple</label>
+                                <input type="radio" name="formule" id="simple" value="option-simple">
+                                <label for="formule">Premium</label>
+                                <input type="radio" name="formule" id="premium" value="option-premium">
+                                <label for="formule">Galaxy</label>
+                                <input type="radio" name="formule" id="galaxy" value="option-galaxy">
+                            </div>
                         </p>
                         <p class="infoForm">
                             <label for="number-of-travellers">Le nombre de voyageurs</label>

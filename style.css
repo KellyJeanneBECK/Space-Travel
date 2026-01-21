@@ -172,4 +172,15 @@ h1 {
     width: 20%;
   }
   /*FIN HERO SECTION*/
+  /*DEBUT CARDS SECTION*/
+  .cards-container {
+    margin: 5vh 10vw;
+  }
+  .cards-container h2 {
+    font-size: 2rem;
+  }
+  .card-home {
+    column-gap: 2.5vw;
+  }
+  /*FIN CARDS SECTION*/
 }

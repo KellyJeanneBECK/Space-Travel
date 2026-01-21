@@ -218,8 +218,13 @@ h2{
   align-items: center;
   width: 100%;
 }
+.formule h2{
+  font-weight: bolder;
+}
 table{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #e4d9ff;
 }
 td img{
   width: 10%;
@@ -227,15 +232,53 @@ td img{
 tr{
   text-align: center;
 }
-td{
-  border-bottom: dotted 1px;
-}
-.tableHeader{
-  color: aqua;
-}
 .formuleChart{
-  width: 40%;
+    width: 50%;
 }
+.rowPair{
+  background-color: #b298dc;
+}
+.rowImpair{
+  background-color: #e4d9ff;
+}
+.rowTitle{
+  width: 18%;
+  border-bottom: dotted black 2px;
+}
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  background-color: #a663cc;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: bold;
+}
+button:hover {
+    background-color: #6f2dbd;
+    cursor: pointer;
+}
+.lastRow {
+  background-color: none;
+}
+.activity{
+  text-align: start;
+  font-weight: bold;
+  color: #594279;
+}
+.activity img{
+  width: 1rem;
+}
+.informationIcon{
+  width: 1rem;
+}
+/*A voir si on garde ou pas*/
+.lastRow td{
+  border-top: solid 1px black;
+}
+/*---------FIN MISE EN FORME TABLEAU-----------*/ 
 /*DEBUT FOOTER*/
 .footer-social{
   text-align: center;

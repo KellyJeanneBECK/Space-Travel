@@ -281,7 +281,10 @@ button:hover {
 .lastRow td{
   border-top: solid 1px black;
 }
-/*---------FIN MISE EN FORME TABLEAU-----------*/ 
+/*---------FIN MISE EN FORME TABLEAU-----------*/
+.anchor {
+  text-align: right;
+}
 /*DEBUT FOOTER*/
 .footer-social{
   text-align: center;

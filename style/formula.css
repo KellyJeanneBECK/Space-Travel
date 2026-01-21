@@ -1,24 +1,48 @@
+/*DEBUT DU HEADER*/
+a{
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+.headerContainer{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.headerNav ul{
+  display: flex;
+  gap: 35px;
+}
+/*FIN DU HEADER*/
 /*-------------DEBUT FORMULAIRE--------------*/
-/*Mars*/
 .section-description{
-    display: flex;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+h2{
+  font-size: 1.5rem;
+}
+.section-description img{
+  width: 15vw;
+  height: auto;
 }
 .section{
-    width: 500px;
-    /* margin: 0 auto; */
-    padding: 20px;
-    background: rgb(3, 3, 3);
-    border-radius: 8px;
-    text-align: center;
+  width: 20vw;
+  padding: 20px;
+  background: rgb(3, 3, 3);
+  border-radius: 8px;
+  text-align: center;
 }
 .section img{
-    max-width: 100%;
-    border-radius: 5px;
+  max-width: 100%;
+  border-radius: 5px;
 }
 .description-img{
-    font-size: 20px;
-    color: rgb(250, 249, 249);
+  font-size: 1rem;
+  color: rgb(250, 249, 249);
 }
 .toggle-desc {
   display: none;
@@ -29,7 +53,7 @@
   display: inline-block;
 }
 .arrow-down {
-  font-size: 15px;
+  font-size: 1rem;
   display: inline-block;
   transition: transform 0.3s;
   color: #e9e9e9;
@@ -50,22 +74,20 @@
   max-height: fit-content;
   padding: 15px;
 }
-
 .section-venus{
-    width: 500px;
-    /* margin: 0 auto; */
-    padding: 20px;
-    background: rgb(3, 3, 3);
-    border-radius: 8px;
-    text-align: center;
+  width: 20vw;
+  padding: 20px;
+  background: rgb(3, 3, 3);
+  border-radius: 8px;
+  text-align: center;
 }
 .section-venus img{
-    max-width: 100%;
-    border-radius: 5px;
+  max-width: 100%;
+  border-radius: 5px;
 }
 .description-img-venus{
-    font-size: 20px;
-    color: rgb(250, 249, 249);
+  font-size: 1rem;
+  color: rgb(250, 249, 249);
 }
 .toggle-desc-venus{
   display: none;
@@ -98,20 +120,19 @@
   padding: 15px;
 }
 .section-mercury{
-    width: 500px;
-    /* margin: 0 auto; */
-    padding: 20px;
-    background: rgb(3, 3, 3);
-    border-radius: 8px;
-    text-align: center;
+  width: 20vw;
+  padding: 20px;
+  background: rgb(3, 3, 3);
+  border-radius: 8px;
+  text-align: center;
 }
 .section-mercury img{
-    max-width: 100%;
-    border-radius: 5px;
+  max-width: 100%;
+  border-radius: 5px;
 }
 .description-img-mercury{
-    font-size: 20px;
-    color: rgb(250, 249, 249);
+  font-size: 1rem;
+  color: rgb(250, 249, 249);
 }
 .toggle-desc-mercury{
   display: none;
@@ -122,7 +143,7 @@
   display: inline-block;
 }
 .arrow-down-mercury {
-  font-size: 15px;
+  font-size: 1rem;
   display: inline-block;
   transition: transform 0.3s;
   color: #e9e9e9;
@@ -144,20 +165,19 @@
   padding: 15px;
 }
 .section-sun{
-    width: 500px;
-    /* margin: 0 auto; */
-    padding: 20px;
-    background: rgb(3, 3, 3);
-    border-radius: 8px;
-    text-align: center;
+  width: 20vw;
+  padding: 20px;
+  background: rgb(3, 3, 3);
+  border-radius: 8px;
+  text-align: center;
 }
 .section-sun img{
-    max-width: 100%;
-    border-radius: 5px;
+  max-width: 100%;
+  border-radius: 5px;
 }
 .description-img-sun{
-    font-size: 20px;
-    color: rgb(250, 249, 249);
+  font-size: 1rem;
+  color: rgb(250, 249, 249);
 }
 .toggle-desc-sun{
   display: none;
@@ -168,7 +188,7 @@
   display: inline-block;
 }
 .arrow-down-sun{
-  font-size: 15px;
+  font-size: 1rem;
   display: inline-block;
   transition: transform 0.3s;
   color: #e9e9e9;
@@ -189,29 +209,14 @@
   max-height: fit-content;
   padding: 15px;
 }
-/*DEBUT DU HEADER*/
-a{
-    text-decoration: none;
-}
-li{
-    list-style-type: none;
-}
-.headerContainer{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-.headerNav ul{
-    display: flex;
-    gap: 35px;
-}
-/*FIN DU HEADER*/
+
+/*------END PRESENTATION VOYAGE----*/
 /*------------ MISE EN FORME TABLEAU--------------*/
 .formule{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .formule h2{
   font-weight: bolder;
@@ -222,10 +227,10 @@ table{
     background-color: #e4d9ff;
 }
 td img{
-    width: 10%;
+  width: 10%;
 }
 tr{
-    text-align: center;
+  text-align: center;
 }
 .formuleChart{
     width: 50%;
@@ -276,31 +281,116 @@ button:hover {
 /*---------FIN MISE EN FORME TABLEAU-----------*/ 
 /*DEBUT FOOTER*/
 .footer-social{
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .footer-link ul{
-    padding-top: 16px;
-    text-align: center;
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 15px;
+  padding-top: 16px;
+  text-align: center;
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 15px;
 }
 .footer-nav{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .logo-nav{
-    width: 5%;
-    margin: 0 auto;
+  width: 5%;
+  margin: 0 auto;
 }
 .footer-bottom{
-    margin-top: 15px;
-    text-align: center;
+  margin-top: 15px;
+  text-align: center;
 }
 /*FIN FOOTER*/
+/*MEDIA QUERIES*/
+@media screen and (max-width:800px){
+  .section-description{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-description img{
+    width: 100%;
+  }
+  .section{
+    width: 70vw;
+  }
+  .section-venus{
+    width: 70vw;
+  }
+  .section-mercury{
+    width: 70vw;
+  }
+  .section-sun{
+    width: 70vw;
+  }
+  .description-img{
+    font-size: 2rem;
+  }
+  .arrow-down{
+    font-size: 1.5rem;
+  }
+  .description-box{
+    font-size: 1.5rem;
+  }
+  .description-img-venus{
+    font-size: 2rem;
+  }
+  .arrow-down-venus{
+    font-size: 1.5rem;
+  }
+  .description-box-venus{
+    font-size: 1.5rem;
+  }
+  .description-img-mercury{
+    font-size: 2rem;
+  }
+  .arrow-down-mercury{
+    font-size: 1.5rem;
+  }
+  .description-box-mercury{
+    font-size: 1.5rem;
+  }
+  .description-img-sun{
+    font-size: 2rem;
+  }
+  .description-img-sun{
+    font-size: 2rem;
+  }
+  .arrow-down-sun{
+    font-size: 1.5rem;
+  }
+  .description-box-sun{
+    font-size: 1.5rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width:425px){
+  .section-description{
+    display: flex;
+    flex-direction: column;
+  }
+  .section-description img{
+    width: 100%;
+  }
+  .section{
+    width: 80vw;
+  }
+  .section-venus{
+    width: 80vw;
+  }
+  .section-mercury{
+    width: 80vw;
+  }
+  .section-sun{
+    width: 80vw;
+  }
+}

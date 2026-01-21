@@ -16,6 +16,9 @@ li{
 }
 /*FIN DU HEADER*/
 /*-------------DEBUT FORMULAIRE--------------*/
+.title-formula{
+  text-align: center;
+}
 .section-description{
   display: flex;
   justify-content: center;

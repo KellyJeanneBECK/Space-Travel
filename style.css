@@ -25,6 +25,9 @@
   font-family: "Orbit", serif;
 }
 /*DEBUT DU HEADER*/
+.logo{
+  width: 10%;
+}
 a {
   text-decoration: none;
 }
@@ -253,6 +256,12 @@ h1 {
   }
   .card-home {
     column-gap: 2.5vw;
+  }
+  .logo{
+  display: none;
+  }
+  .logo-nav{
+  width: 50%;
   }
   /*FIN CARDS SECTION*/
 }

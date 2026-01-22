@@ -73,6 +73,50 @@ h1 {
   width: 100%;
 }
 /*FIN HERO SECTION*/
+/*DEBUT CARDS SECTION*/
+.cards-container {
+  margin: 5vh 20vw;
+}
+.cards-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+.card-home {
+  display: flex;
+  column-gap: 1vw;
+  border-bottom: 8px solid black;
+}
+.card-reverse {
+  flex-direction: row-reverse;
+}
+.img-container {
+  width: 40%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+.img-container img {
+  width: 100%;
+}
+.text-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.text-card h3 {
+  font-size: 1.5rem;
+  line-height: 2;
+  border-bottom: 2px solid black;
+}
+.text-card a {
+  width: fit-content;
+  color: black;
+  font-size: 1.125rem;
+  text-decoration: none;
+  line-height: 2;
+}
+/*FIN CARDS SECTION*/
 /*DEBUT TESTIMONIALS*/
 .testimonials {
   background-color: #fefefe;
@@ -175,5 +219,16 @@ h1 {
     width: 20%;
   }
   /*FIN HERO SECTION*/
+  /*DEBUT CARDS SECTION*/
+  .cards-container {
+    margin: 5vh 10vw;
+  }
+  .cards-container h2 {
+    font-size: 2rem;
+  }
+  .card-home {
+    column-gap: 2.5vw;
+  }
+  /*FIN CARDS SECTION*/
 }
 

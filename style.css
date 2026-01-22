@@ -150,6 +150,8 @@ h1 {
   background-color: #fefefe;
   margin: 3rem 0;
   border: 2px solid #08080853;
+  width: 60vw;
+  margin: 0 auto;
 }
 .testimonials h2 {
   font-family: "Prompt", serif;
@@ -165,10 +167,11 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 28px;
+  margin-bottom: 15px;
 }
 .review-card {
   background: #fbfcfa;
-  width: 15%;
+  width: 30%;
   padding: 1.5rem;
   border-radius: 10px;
   border-left: 4px solid #b79a52;
@@ -190,12 +193,52 @@ h1 {
   margin-top: 0.5rem;
   font-style: normal;
 }
-@media screen and (max-width: 425px) {
-  .review-card {
-    width: 80vw;
-  }
+.testimonials-resp{
+  display: none;
 }
-/*FIN TESTIMONIALS*/
+/*RESPONSIVE TESTIMONIALS*/
+.testimonials-resp{
+  background-color: #fefefe;
+  margin: 3rem 0;
+  border: 2px solid #08080853;
+}
+.testimonials-resp h2 {
+  font-family: "Prompt", serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #080808;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+.reviews-resp {
+  display: flex;
+  gap: 28px;
+}
+.review-card-resp {
+  background: #fbfcfa;
+  padding: 1rem;
+  border-radius: 10px;
+  border-left: 4px solid #b79a52;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.stars {
+  color: #fbbf24;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.review-card-resp p {
+  color: #060606;
+  line-height: 1.6;
+  font-style: italic;
+}
+.review-card-resp strong {
+  color: #159546;
+  display: block;
+  margin-top: 0.5rem;
+  font-style: normal;
+}
+/*FIN RESPONSIVE TESTIMONIALS*/
 /*DEBUT FOOTER*/
 .footer-social {
   text-align: center;
@@ -264,4 +307,28 @@ h1 {
     font-size: 1.5rem;
   }
   /*FIN CARDS SECTION*/
+  /*DEBUT TESTIMONIALS*/
+  .testimonials-resp{
+    margin-left: 15px;
+    margin-right: 30px;
+  }
+  .testimonials-resp h2{
+    font-size: 2rem;
+  }
+  .reviews-resp{
+    overflow-x: scroll;
+    gap:25px;
+    padding: 10%;
+  }
+  .review-card-resp{
+    border-radius: 15px;
+    min-width: 80vw;
+  }
+  .testimonials{
+   display: none;
+  }
+  .testimonials-resp{
+    display: block;
+  }
 }
+

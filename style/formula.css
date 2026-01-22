@@ -35,7 +35,7 @@ h2{
 .section{
   width: 20vw;
   padding: 20px;
-  background: rgb(3, 3, 3);
+  background: black;
   border-radius: 8px;
   text-align: center;
 }
@@ -80,7 +80,7 @@ h2{
 .section-venus{
   width: 20vw;
   padding: 20px;
-  background: rgb(3, 3, 3);
+  background: black;
   border-radius: 8px;
   text-align: center;
 }
@@ -125,7 +125,7 @@ h2{
 .section-mercury{
   width: 20vw;
   padding: 20px;
-  background: rgb(3, 3, 3);
+  background: black;
   border-radius: 8px;
   text-align: center;
 }
@@ -170,7 +170,7 @@ h2{
 .section-sun{
   width: 20vw;
   padding: 20px;
-  background: rgb(3, 3, 3);
+  background: black;
   border-radius: 8px;
   text-align: center;
 }

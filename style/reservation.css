@@ -60,13 +60,13 @@ li {
 .burger-input {
   position: absolute;
   z-index: 1;
-  width: min(3.5rem, 64px);
-  height: min(3.5rem, 64px);
+  width: 64px;
+  height: 64px;
   opacity: 0;
 }
 .burger-btn {
-  width: min(3.5rem, 64px);
-  height: min(3.5rem, 64px);
+  width: 64px;
+  height: 64px;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -61,6 +61,7 @@ h2{
   background: black;
   border-radius: 8px;
   text-align: center;
+  margin: 0 auto;
 }
 .section img{
   max-width: 100%;
@@ -106,6 +107,7 @@ h2{
   background: black;
   border-radius: 8px;
   text-align: center;
+  margin: 0 auto;
 }
 .section-venus img{
   max-width: 100%;
@@ -151,6 +153,7 @@ h2{
   background: black;
   border-radius: 8px;
   text-align: center;
+  margin: 0 auto;
 }
 .section-mercury img{
   max-width: 100%;
@@ -196,6 +199,7 @@ h2{
   background: black;
   border-radius: 8px;
   text-align: center;
+  margin: 0 auto;
 }
 .section-sun img{
   max-width: 100%;
@@ -246,6 +250,7 @@ h2{
 }
 .formule h2{
   font-weight: bolder;
+  text-align: center;
 }
 table{
     font-family: Verdana, Geneva, Tahoma, sans-serif;

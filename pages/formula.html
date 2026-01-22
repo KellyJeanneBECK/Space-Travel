@@ -12,7 +12,7 @@
     <header>
       <div class="headerContainer">
         <div>
-          <img class="logo" src="" alt="space-travel logo">
+          <img class="logo" id="anchor" src="" alt="space-travel logo">
         </div>
         <div class="headerNav">
             <nav>
@@ -27,7 +27,7 @@
     </header>
     <!--FIN DU HEADER-->
     <main>
-        <h2>Découvrez nos formules</h2> <!-- Titre formulaire-->
+        <h2 class="title-formula">Découvrez nos formules</h2> <!-- Titre formulaire-->
 <!--------------------------START PRESENTATION DIFFERENTS VOYAGE-------------------------------->
     <section>
         <div class="section-description">
@@ -119,73 +119,127 @@
 <!------------ Section avec le tableaux des formules proposées --------->
         <section class="formule">
             <!-- Tableau formule-->
-            <section class="formuleChart"> 
+             <h2>DECOUVREZ NOS FORMULES</h2>
+             <!-- VERSION DESKTOP-->
+            <section class="formuleChartDesktop"> 
                 <table>
                     <tr class="tableColumns">
                         <th></th>
-                        <th class="rowTitle">Formule Explorer</th>
-                        <th class="rowTitle">Formule premium</th>
-                        <th class="rowTitle">Formule Galaxie</th>
+                        <th class="rowTitle">FORMULE EXPLORER</th>
+                        <th class="rowTitle">FORMULE PREMIUM</th>
+                        <th class="rowTitle">FORMULE GALAXIE</th>
                     </tr>
-                    <tr>
-                        <td>Vol surobitale (franchir la ligne de Karman)</td>
+                    <tr class="rowImpair">
+                        <td class="activity"><img src="../images/planet.svg" alt=""> Vol surobitale (franchir la ligne de Karman)</td>
                         <td><img src="../images/include.png" alt="Compris dans la formule"></td>
-                        <td></td>
-                        <td>Formule Galaxie* <br> à supprimer si nécessaire</td>
-                    </tr>
-                    <tr>
-                        <td>Séjour prolongé en orbite terreste</td>
                         <td><img src="../images/include.png" alt="Compris dans la formule"></td>
-                        <td></td>
-                        <td>Formule Galaxie* <br> à supprimer si nécessaire</td>
-                    </tr>
-                    <tr>
-                        <td>Formation prévol</td>
                         <td><img src="../images/include.png" alt="Compris dans la formule"></td>
-                        <td></td>
-                        <td>Formule Galaxie* <br> à supprimer si nécessaire</td>
                     </tr>
-                    <tr>
-                        <td>Repas spaciaux gastronomique</td>
-                        <td></td>
-                        <td></td>
-                        <td>Formule Galaxie* <br> à supprimer si nécessaire</td>
+                    <tr class="rowPair">
+                        <td class="activity"><img src="../images/orbit.svg" alt=""> Séjour prolongé en orbite terreste</td>
+                        <td><img src="../images/include.png" alt="Compris dans la formule"></td>
+                        <td><img src="../images/include.png" alt="Compris dans la formule"></td>
+                        <td><img src="../images/include.png" alt="Compris dans la formule"></td>
                     </tr>
-                    <tr>
-                        <td>Cabine individuelle avec hublot panoramique</td>
+                    <tr class="rowImpair">
+                        <td class="activity"><img src="../images/learning.svg" alt=""> Formation prévol</td>
                         <td></td>
-                        <td></td>
-                        <td>Formule Galaxie* <br> à supprimer si nécessaire</td>
+                        <td><img src="../images/include.png" alt="Compris dans la formule"></td>
+                        <td><img src="../images/include.png" alt="Compris dans la formule"></td>
                     </tr>
-                    <tr>
-                        <td>Activité en apesanteur (marche flotté, jeux spatiaux)</td>
+                    <tr class="rowPair">
+                        <td class="activity"><img src="../images/dinner_dining.svg" alt=""> Repas spaciaux gastronomique</td>
                         <td></td>
                         <td></td>
-                        <td>Formule Galaxie* <br> à supprimer si nécessaire</td>
+                        <td><img src="../images/include.png" alt="Compris dans la formule"></td>
                     </tr>
-                    <tr>
-                        <td>Certificat de vol cosmique</td>
+                    <tr class="rowImpair">
+                        <td class="activity"><img src="../images/premiumClass.svg" alt=""> Cabine individuelle avec hublot panoramique</td>
                         <td></td>
                         <td></td>
-                        <td>Formule Galaxie* <br> à supprimer si nécessaire</td>
+                        <td><img src="../images/include.png" alt="Compris dans la formule"></td>
                     </tr>
-                    <tr>
-                        <td>Cadeau souvenir (poussière de la planète symbolique, etc)</td>
-                        <td></td>
-                        <td></td>
-                        <td>Formule Galaxie* <br> à supprimer si nécessaire</td>
+                    <tr class="rowPair">
+                        <td class="activity"><img src="../images/attractions.svg" alt=""> Activité en apesanteur (marche flotté, jeux spatiaux)</td>
+                        <td><img src="../images/include.png" alt="Compris dans la formule"></td>
+                        <td><img src="../images/include.png" alt="Compris dans la formule"></td>
+                        <td><img src="../images/include.png" alt="Compris dans la formule"></td>
                     </tr>
-                    <tr>
-                        <td>Observation astronomique guidée</td>
+                    <tr class="rowImpair">
+                        <td class="activity"><img src="../images/certificate.svg" alt=""> Certificat de vol cosmique</td>
                         <td></td>
+                        <td><img src="../images/include.png" alt="Compris dans la formule"></td>
+                        <td><img src="../images/include.png" alt="Compris dans la formule"></td>
+                    </tr>
+                    <tr class="rowPair">
+                        <td class="activity"><img src="../images/gifts.svg" alt=""> Cadeau souvenir (poussière de la planète, etc) <img src="../images/information.svg" alt="Informations" class="informationIcon"></td>
+                        <td><img src="../images/include.png" alt="Compris dans la formule"></td>
+                        <td><img src="../images/include.png" alt="Compris dans la formule"></td>
+                        <td><img src="../images/include.png" alt="Compris dans la formule"></td>
+                    </tr>
+                    <tr class="rowImpair">
+                        <td class="activity"><img src="../images/binocular.svg" alt=""> Observation astronomique guidée</td>
+                        <td><img src="../images/include.png" alt="Compris dans la formule"></td>
+                        <td><img src="../images/include.png" alt="Compris dans la formule"></td>
+                        <td><img src="../images/include.png" alt="Compris dans la formule"></td>
+                    </tr>                    
+                    <tr class="lastRow">
                         <td></td>
-                        <td>Formule Galaxie* <br> à supprimer si nécessaire</td>
+                        <td><button>VERS L'INFINI ET AU DELA 🚀</button></td>
+                        <td><button>VERS L'INFINI ET AU DELA 🚀</button></td>
+                        <td><button>VERS L'INFINI ET AU DELA 🚀</button></td>
                     </tr>
                 </table>
-            <button>Pour l'infini et au dela</button>
-            </section>
-        </section>    
-    </main>
+            </section>            
+            <!-- VERSION TABLETTE-->
+             <section class="formuleChartTablet">
+                <div class="allCards">
+                    <div class="individualCard">
+                        <!-- FORMULE EXPLORER-->
+                        <h3>FORMULE EXPLORER</h3>
+                        <p class="include"><img src="../images/planet.svg" alt=""> Vol surobitale (franchir la ligne de Karman)</p>
+                        <p class="include"><img src="../images/orbit.svg" alt=""> Séjour prolongé en orbite terreste</p>
+                        <p class="include"><img src="../images/attractions.svg" alt=""> Activité en apesanteur (marche flotté, jeux spatiaux)</p>
+                        <p class="include"><img src="../images/gifts.svg" alt=""> Cadeau souvenir (poussière de la planète, etc)</p>
+                        <p class="include"><img src="../images/binocular.svg" alt=""> Observation astronomique guidée</p>
+                        <p class="notInclude"><img src="../images/learning.svg" alt=""> Formation prévol</p>
+                        <p class="notInclude"><img src="../images/certificate.svg" alt=""> Certificat de vol cosmique</p>
+                        <p class="notInclude"><img src="../images/dinner_dining.svg" alt=""> Repas spaciaux gastronomique</p>
+                        <p class="notInclude"><img src="../images/premiumClass.svg" alt=""> Cabine individuelle avec hublot panoramique</p>
+                    </div>
+                    <!-- FORMULE PREMIUM -->
+                    <div class="individualCard">
+                        <h3>FORMULE PREMIUM</h3>
+                        <p class="include"><img src="../images/planet.svg" alt=""> Vol surobitale (franchir la ligne de Karman)</p>
+                        <p class="include"><img src="../images/orbit.svg" alt=""> Séjour prolongé en orbite terreste</p>
+                        <p class="include"><img src="../images/attractions.svg" alt=""> Activité en apesanteur (marche flotté, jeux spatiaux)</p>
+                        <p class="include"><img src="../images/gifts.svg" alt=""> Cadeau souvenir (poussière de la planète, etc)</p>
+                        <p class="include"><img src="../images/binocular.svg" alt=""> Observation astronomique guidée</p>
+                        <p class="include"><img src="../images/learning.svg" alt=""> Formation prévol</p>
+                        <p class="include"><img src="../images/certificate.svg" alt=""> Certificat de vol cosmique</p>
+                        <p class="notInclude"><img src="../images/dinner_dining.svg" alt=""> Repas spaciaux gastronomique</p>
+                        <p class="notInclude"><img src="../images/premiumClass.svg" alt=""> Cabine individuelle avec hublot panoramique</p>
+                    </div>
+                    <!-- FORMULE GALAXY -->
+                    <div class="individualCard">
+                        <h3>FORMULE GALAXIE</h3>
+                        <p class="include"><img src="../images/planet.svg" alt=""> Vol surobitale (franchir la ligne de Karman)</p>
+                        <p class="include"><img src="../images/orbit.svg" alt=""> Séjour prolongé en orbite terreste</p>
+                        <p class="include"><img src="../images/attractions.svg" alt=""> Activité en apesanteur (marche flotté, jeux spatiaux)</p>
+                        <p class="include"><img src="../images/gifts.svg" alt=""> Cadeau souvenir (poussière de la planète, etc)</p>
+                        <p class="include"><img src="../images/binocular.svg" alt=""> Observation astronomique guidée</p>
+                        <p class="include"><img src="../images/learning.svg" alt=""> Formation prévol</p>
+                        <p class="include"><img src="../images/certificate.svg" alt=""> Certificat de vol cosmique</p>
+                        <p class="include"><img src="../images/dinner_dining.svg" alt=""> Repas spaciaux gastronomique</p>
+                        <p class="include"><img src="../images/premiumClass.svg" alt=""> Cabine individuelle avec hublot panoramique</p>
+                    </div>
+                </div>
+             </section>
+        </section>
+    <div class="anchor">
+        <a href="#anchor"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M440-320h80v-168l64 64 56-56-160-160-160 160 56 56 64-64v168Zm40 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></a>
+    </div>    
+</main>
     <footer>
         <div class="footer-social">
             <h3>Suivez nous sur:</h3>

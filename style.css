@@ -89,7 +89,6 @@ h1 {
 .card-reverse {
   flex-direction: row-reverse;
 }
-
 .img-container {
   width: 40%;
   background-color: black;
@@ -118,6 +117,54 @@ h1 {
   line-height: 2;
 }
 /*FIN CARDS SECTION*/
+/*DEBUT TESTIMONIALS*/
+.testimonials {
+  background-color: #fefefe;
+  margin: 3rem 0;
+  border: 2px solid #08080853;
+}
+.testimonials h2 {
+  color: #080808;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+}
+.review-card {
+  background: #fbfcfa;
+  width: 25%;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #b79a52;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.stars {
+  color: #fbbf24;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.review-card p {
+  color: #060606;
+  line-height: 1.6;
+  font-style: italic;
+}
+.review-card strong {
+  color: #159546;
+  display: block;
+  margin-top: 0.5rem;
+  font-style: normal;
+}
+@media screen and (max-width:425px) {
+  .review-card{
+    width: 80vw;
+  }
+}
+/*FIN TESTIMONIALS*/
 /*DEBUT FOOTER*/
 .footer-social {
   text-align: center;
@@ -184,3 +231,4 @@ h1 {
   }
   /*FIN CARDS SECTION*/
 }
+

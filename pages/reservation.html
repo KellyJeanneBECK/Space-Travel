@@ -27,12 +27,11 @@
     <!--FIN DU HEADER-->
     <main>
         <!--DEBUT DU FORMULAIRE-->
-        <section>
-            <p class="reservationForm">
+        <section class="space-section">
+            <div class="reservationForm">
                 <h2>Réserver un voyage</h2>
                 <form method="get" action="">
                     <div class="infoContainerForm">
-                        <p class="infoForm">
                             <label for="name">Votre nom</label>
                             <input type="text" name="name" id="name">
                             <label for="firstname">Votre prénom</label>
@@ -41,8 +40,8 @@
                             <input type="email" name="email" id="email">
                             <label for="date-of-birth">Votre date de naissance</label>
                             <input type="date" name="date-of-birth" id="date-of-birth">
-                        </p>
-                        <p class="infoForm">
+                    </div>
+                    <div class="infoForm">
                             <label for="formula">Quelle formule vous intéresse?</label> <!--En attente des noms des formules-->
                             <select name="formula" id="formula">
                                 <option value="sun">Soleil</option>
@@ -50,8 +49,8 @@
                                 <option value="venus">Vénus</option>
                                 <option value="mars">Mars</option>
                             </select>
-                        </p>
-                        <p class="infoForm">
+                    </div>
+                        <div class="infoForm">
                            <p class="radioQuestion">Quelle option vous intéresse ?</p><!--En attente des noms des options-->
                             <div class="radioForm">
                                 <label for="formule">Simple</label>
@@ -61,11 +60,11 @@
                                 <label for="formule">Galaxy</label>
                                 <input type="radio" name="formule" id="galaxy" value="option-galaxy">
                             </div>
-                        </p>
-                        <p class="infoForm">
+                        </div>
+                        <div class="infoForm">
                             <label for="number-of-travellers">Le nombre de voyageurs</label>
                             <input type="number" name="number-of-travellers" id="number-of-travellers" min="1" max="8">
-                        </p>
+                        </div>
                         <button type="submit" class="buttonForm">Envoyer</button>
                     </div>
                 </form>

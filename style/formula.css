@@ -16,6 +16,9 @@ li{
 }
 /*FIN DU HEADER*/
 /*-------------DEBUT FORMULAIRE--------------*/
+.title-formula{
+  text-align: center;
+}
 .section-description{
   display: flex;
   justify-content: center;
@@ -282,6 +285,9 @@ button:hover {
   visibility: hidden;
 }
 /*---------FIN MISE EN FORME TABLEAU-----------*/ 
+.anchor {
+  text-align: right;
+}
 /*DEBUT FOOTER*/
 .footer-social{
   text-align: center;

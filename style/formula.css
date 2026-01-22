@@ -281,7 +281,10 @@ button:hover {
 .lastRow td{
   border-top: solid 1px black;
 }
-/*---------FIN MISE EN FORME TABLEAU-----------*/
+.formuleChartTablet{
+  visibility: hidden;
+}
+/*---------FIN MISE EN FORME TABLEAU-----------*/ 
 .anchor {
   text-align: right;
 }
@@ -378,6 +381,39 @@ button:hover {
   h2{
     font-size: 2rem;
   }
+  /*--------TABLEAU FORMULE VERSION TABLETTE-----*/
+  .formuleChartDesktop{
+    visibility: hidden;
+  }
+  .formuleChartTablet{
+    visibility: visible;
+  }
+  .notInclude{
+  text-decoration: line-through;
+  color: grey;
+  }
+  .notInclude img{
+  filter: grayscale(100%);
+  }
+  .allCards{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .allCards h3{
+    text-align: center;
+    border-bottom: dotted 2px navy;
+    padding-bottom: 20px;
+  }
+  .allCards p{
+    align-items: center;  
+  }  
+  .individualCard{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #e4d9ff;
+  }
+/*--------FIN CSS - TABLEAU FORMULE VERSION TABLETTE-----*/
 }
 @media screen and (max-width:425px){
   .section-description{

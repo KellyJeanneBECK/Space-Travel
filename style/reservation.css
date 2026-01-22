@@ -18,182 +18,263 @@
   font-weight: 200;
   font-style: italic;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Orbit", serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbit", serif;
 }
-body{
-    color: #fff;
-    min-height: 100vh; /*prend tout la hauteur de l'écran*/
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
+body {
+  color: #fff;
+  min-height: 100vh; /*prend tout la hauteur de l'écran*/
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
 }
 /*DEBUT DU HEADER*/
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
-.headerContainer{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 2vw;
 }
-.headerNav ul{
-    display: flex;
-    gap: 35px;
+.headerNav ul {
+  display: flex;
+  gap: 35px;
 }
 /*FIN DU HEADER*/
-.anchor{
-    text-align: right;
+/*DEBUT BURGER MENU*/
+.nav-mobile {
+  display: none;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+}
+
+.burger-input {
+  position: absolute;
+  z-index: 1;
+  width: min(3.5rem, 64px);
+  height: min(3.5rem, 64px);
+  opacity: 0;
+}
+.burger-btn {
+  width: min(3.5rem, 64px);
+  height: min(3.5rem, 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 15%;
+  background-color: transparent;
+  border: none;
+}
+.burger-btn span {
+  display: inline-block;
+  width: 60%;
+  height: 4px;
+  background-color: white;
+  border-radius: 100px;
+}
+.burger-input:checked ~ button {
+  gap: 0;
+}
+.burger-input:checked ~ button span {
+  transition: all 0.3s ease;
+}
+.burger-input:checked ~ button .first-line {
+  transform: rotate(45deg);
+}
+.burger-input:checked ~ button .second-line {
+  transform: rotate(-45deg);
+}
+.nav-mobile ul {
+  top: calc(100% + 10px);
+  right: 0;
+  margin-right: -2vw;
+  width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2rem;
+  position: absolute;
+  background-color: white;
+  overflow-x: hidden;
+  padding: 1rem 0;
+  z-index: 2;
+  transition: all 0.4s ease;
+}
+.burger-input:checked ~ ul {
+  width: 100vw;
+  padding: 1rem 2vw;
+}
+/*FIN BURGER MENU*/
+.anchor {
+  text-align: right;
 }
 /*DEBUT DU FORMULAIRE*/
-section{
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-    width: 100%;
-    box-sizing: border-box;
+section {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
-.reservationForm{
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-    max-width: 500px;
-    width: 90%;
-    margin: 20px
+.reservationForm {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  width: 90%;
+  margin: 20px;
 }
-.reservationForm h2{
-    font-family: "Prompt", sans-serif;
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 0;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #fff;
-    text-shadow: 
+.reservationForm h2 {
+  font-family: "Prompt", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  text-shadow:
     0 0 5px #311379,
     0 0 10px #311379,
     0 0 20px #311379;
 }
-.infoForm{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    width: 100%;
+.infoForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
 }
-.infoForm label{
-    margin-bottom: 5px;
-    font-size: 1rem;
-    color: #b8c1ec;
-    font-weight: 500;
+.infoForm label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #b8c1ec;
+  font-weight: 500;
 }
-input, select{
-    width: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    padding: 12px;
-    color: white;
-    font-size: 1rem;
-    outline: none;
-    transition: all 0.3s ease;
+input,
+select {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
 }
-input:focus, select:focus{
-    border-color: #bc13fe;
-    box-shadow: 0 0 15px rgba(188, 19, 254, 0.4);
-    background: rgba(0, 0, 0, 0.6);
+input:focus,
+select:focus {
+  border-color: #bc13fe;
+  box-shadow: 0 0 15px rgba(188, 19, 254, 0.4);
+  background: rgba(0, 0, 0, 0.6);
 }
-select option{
-    background: #1b2735;
-    color: white;
+select option {
+  background: #1b2735;
+  color: white;
 }
-.radioQuestion{
-    text-align: center;
-    margin-bottom: 10px;
-    color: #b8c1ec;
-    font-weight: bold;
+.radioQuestion {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #b8c1ec;
+  font-weight: bold;
 }
-.radioForm{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 15px;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+.radioForm {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
-.radioForm label{
-    margin-right: 5px;
-    cursor: pointer;
+.radioForm label {
+  margin-right: 5px;
+  cursor: pointer;
 }
-.radioForm input[type="radio"]{
-    margin-right: 15px;
-    accent-color: #bc13fe;
-    transform: scale(1.2);
-    cursor: pointer;
+.radioForm input[type="radio"] {
+  margin-right: 15px;
+  accent-color: #bc13fe;
+  transform: scale(1.2);
+  cursor: pointer;
 }
-.buttonForm{
-    width: 100%;
-    margin-top: 20px;
-    padding: 15px;
-    border: none;
-    border-radius: 50px;
-    background: linear-gradient(90deg, #0e0331 0%, #3b1c4e 100%);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+.buttonForm {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #0e0331 0%, #3b1c4e 100%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
-.buttonForm:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 10px rgba(188, 19, 254, 0.6);
+.buttonForm:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px rgba(188, 19, 254, 0.6);
 }
-.buttonForm:active{
-    transform: scale(0.98);
+.buttonForm:active {
+  transform: scale(0.98);
 }
 /*FIN DU FORMULAIRE*/
 /*DEBUT FOOTER*/
-.footer-social{
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.footer-social {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.footer-link ul{
-    padding-top: 16px;
-    text-align: center;
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 15px;
+.footer-link ul {
+  padding-top: 16px;
+  text-align: center;
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 15px;
 }
-.footer-nav{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-.logo-nav{
-    width: 5%;
-    margin: 0 auto;
+.logo-nav {
+  width: 5%;
+  margin: 0 auto;
 }
-.footer-bottom{
-    margin-top: 15px;
-    text-align: center;
+.footer-bottom {
+  margin-top: 15px;
+  text-align: center;
 }
 /*FIN FOOTER*/
+@media screen and (max-width: 800px) {
+  /* DEBUT MENU BURGER */
+  .nav-desktop {
+    display: none;
+  }
+  .nav-mobile {
+    display: flex;
+  }
+  /* FIN MENU BURGER */
+}

@@ -168,7 +168,7 @@ h1 {
 }
 .review-card {
   background: #fbfcfa;
-  width: 25%;
+  width: 15%;
   padding: 1.5rem;
   border-radius: 10px;
   border-left: 4px solid #b79a52;
@@ -217,7 +217,7 @@ h1 {
   justify-content: center;
   flex-direction: column;
 }
-.logo-nav {
+.logo-nav{
   width: 5%;
   margin: 0 auto;
 }

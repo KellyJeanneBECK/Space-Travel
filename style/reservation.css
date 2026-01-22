@@ -1,10 +1,36 @@
+@font-face {
+  font-family: "Orbit";
+  src: url("../fonts/Orbit-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Wallpoet";
+  src: url("../fonts/Wallpoet-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("../fonts/Prompt-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url("../fonts/Prompt-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Orbit", serif;
 }
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    min-height: 100vh; /*prend tout la hauteur de l'écran*/
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
 }
 /*DEBUT DU HEADER*/
 a{
@@ -27,42 +53,120 @@ li{
     text-align: right;
 }
 /*DEBUT DU FORMULAIRE*/
-h2{
-    text-align: center;
-    margin: 25px;
+section{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
-.infoContainerForm{
+.reservationForm{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 90%;
+    margin: 20px
+}
+.reservationForm h2{
+    font-family: "Prompt", sans-serif;
     text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    text-shadow: 
+    0 0 5px #311379,
+    0 0 10px #311379,
+    0 0 20px #311379;
+}
+.infoForm{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
 }
 .infoForm label{
-    display: block;
     margin-bottom: 5px;
+    font-size: 1rem;
+    color: #b8c1ec;
+    font-weight: 500;
 }
-.infoForm input{
-    width: 50%;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 5px;
+input, select{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 12px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+input:focus, select:focus{
+    border-color: #bc13fe;
+    box-shadow: 0 0 15px rgba(188, 19, 254, 0.4);
+    background: rgba(0, 0, 0, 0.6);
+}
+select option{
+    background: #1b2735;
+    color: white;
 }
 .radioQuestion{
-    margin: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #b8c1ec;
+    font-weight: bold;
 }
 .radioForm{
-    margin: 15px;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.radioForm label{
+    margin-right: 5px;
+    cursor: pointer;
+}
+.radioForm input[type="radio"]{
+    margin-right: 15px;
+    accent-color: #bc13fe;
+    transform: scale(1.2);
+    cursor: pointer;
 }
 .buttonForm{
-    background-color: aquamarine;
-    color: black;
-    padding: 12px 20px;
-    margin: 10px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #0e0331 0%, #3b1c4e 100%);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     cursor: pointer;
-                   
+    transition: transform 0.2s, box-shadow 0.2s;
 }
+.buttonForm:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px rgba(188, 19, 254, 0.6);
+}
+.buttonForm:active{
+    transform: scale(0.98);
+}
+/*FIN DU FORMULAIRE*/
 /*DEBUT FOOTER*/
 .footer-social{
     text-align: center;

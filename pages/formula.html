@@ -31,12 +31,12 @@
 <!--------------------------START PRESENTATION DIFFERENTS VOYAGE-------------------------------->
     <section>
         <div class="section-description">
-            <div class="section">
+            <div id="mars-link" class="section">
                 <img src="../images/mars.jpg" alt="Mars">
                 <p class="description-img">Mars</p>
                 <input type="checkbox" id="toggle-desc" class="toggle-desc">
                 <label for="toggle-desc" class="arrow-container">
-                    <span class="arrow-down">La Planète Rouge vous attend - Découvrez l'aventure ultime avec Space Travel</span>
+                    <span class="arrow-down">La Planète Rouge vous attend - Découvrez l'aventure ultime avec Space Travel <br>↓</span>
                 </label>
                 <div class="description-box">
                     <p class="textBox">
@@ -51,12 +51,12 @@
                     </p>  
                 </div>
             </div> 
-            <div class="section-venus">
+            <div id="venus-link" class="section-venus">
                 <img src="../images/venus.jpg" alt="Vénus">
                 <p class="description-img-venus">Vénus</p>
                 <input type="checkbox" id="toggle-desc-venus" class="toggle-desc-venus">
                 <label for="toggle-desc-venus" class="arrow-container-venus">
-                    <span class="arrow-down-venus">La Planète de la Passion vous attend - Découvrez l'inferno avec Space Travel</span>
+                    <span class="arrow-down-venus">La Planète de la Passion vous attend - Découvrez l'inferno avec Space Travel <br>↓</span>
                 </label>
                 <div class="description-box-venus">
                     <p class="textBox-venus">
@@ -71,12 +71,13 @@
                     </p>
                 </div>
             </div>
-            <div class="section-mercury">
+            <div id="mercury-link" class="section-mercury">
                 <img src="../images/mercure.jpg" alt="Mercure">
                 <p class="description-img-mercury">Mercure</p>
                 <input type="checkbox" id="toggle-desc-mercury" class="toggle-desc-mercury">
                 <label for="toggle-desc-mercury" class="arrow-container-mercury">
-                    <span class="arrow-down-mercury">La Planète Rapide vous attend - Découvrez les extrêmes avec Space Travel</span>
+                    <span class="arrow-down-mercury">La Planète Rapide vous attend - Découvrez les extrêmes avec Space Travel <br>
+                    ↓</span>
                 </label>
                 <div class="description-box-mercury">
                     <p class="textBox-mercury">
@@ -91,12 +92,13 @@
                     </p>
                 </div>
             </div>
-            <div class="section-sun">
+            <div id="sun-link" class="section-sun">
                 <img src="../images/sun.jpg" alt="Soleil">
                 <p class="description-img-sun">Soleil</p>
                 <input type="checkbox" id="toggle-desc-sun" class="toggle-desc-sun">
                 <label for="toggle-desc-sun" class="arrow-container-sun">
-                    <span class="arrow-down-sun">L'étoile au centre de notre système solaire. Pour un aller sans retour avec Space Travel</span>
+                    <span class="arrow-down-sun">L'étoile au centre de notre système solaire. Pour un aller sans retour avec Space Travel <br>
+                    ↓ </span>
                 </label>
                 <div class="description-box-sun">
                     <p class="textBox-sun">
@@ -120,7 +122,8 @@
         <section class="formule">
             <!-- Tableau formule-->
              <h2>DECOUVREZ NOS FORMULES</h2>
-            <section class="formuleChart"> 
+             <!-- VERSION DESKTOP-->
+            <section class="formuleChartDesktop"> 
                 <table>
                     <tr class="tableColumns">
                         <th></th>
@@ -184,13 +187,56 @@
                     </tr>                    
                     <tr class="lastRow">
                         <td></td>
-                        <td><button>POUR L'INFINI ET AU DELA 🚀</button></td>
-                        <td><button>POUR L'INFINI ET AU DELA 🚀</button></td>
-                        <td><button>POUR L'INFINI ET AU DELA 🚀</button></td>
+                        <td><button>VERS L'INFINI ET AU DELA 🚀</button></td>
+                        <td><button>VERS L'INFINI ET AU DELA 🚀</button></td>
+                        <td><button>VERS L'INFINI ET AU DELA 🚀</button></td>
                     </tr>
-                    
                 </table>
-            </section>
+            </section>            
+            <!-- VERSION TABLETTE-->
+             <section class="formuleChartTablet">
+                <div class="allCards">
+                    <div class="individualCard">
+                        <!-- FORMULE EXPLORER-->
+                        <h3>FORMULE EXPLORER</h3>
+                        <p class="include"><img src="../images/planet.svg" alt=""> Vol surobitale (franchir la ligne de Karman)</p>
+                        <p class="include"><img src="../images/orbit.svg" alt=""> Séjour prolongé en orbite terreste</p>
+                        <p class="include"><img src="../images/attractions.svg" alt=""> Activité en apesanteur (marche flotté, jeux spatiaux)</p>
+                        <p class="include"><img src="../images/gifts.svg" alt=""> Cadeau souvenir (poussière de la planète, etc)</p>
+                        <p class="include"><img src="../images/binocular.svg" alt=""> Observation astronomique guidée</p>
+                        <p class="notInclude"><img src="../images/learning.svg" alt=""> Formation prévol</p>
+                        <p class="notInclude"><img src="../images/certificate.svg" alt=""> Certificat de vol cosmique</p>
+                        <p class="notInclude"><img src="../images/dinner_dining.svg" alt=""> Repas spaciaux gastronomique</p>
+                        <p class="notInclude"><img src="../images/premiumClass.svg" alt=""> Cabine individuelle avec hublot panoramique</p>
+                    </div>
+                    <!-- FORMULE PREMIUM -->
+                    <div class="individualCard">
+                        <h3>FORMULE PREMIUM</h3>
+                        <p class="include"><img src="../images/planet.svg" alt=""> Vol surobitale (franchir la ligne de Karman)</p>
+                        <p class="include"><img src="../images/orbit.svg" alt=""> Séjour prolongé en orbite terreste</p>
+                        <p class="include"><img src="../images/attractions.svg" alt=""> Activité en apesanteur (marche flotté, jeux spatiaux)</p>
+                        <p class="include"><img src="../images/gifts.svg" alt=""> Cadeau souvenir (poussière de la planète, etc)</p>
+                        <p class="include"><img src="../images/binocular.svg" alt=""> Observation astronomique guidée</p>
+                        <p class="include"><img src="../images/learning.svg" alt=""> Formation prévol</p>
+                        <p class="include"><img src="../images/certificate.svg" alt=""> Certificat de vol cosmique</p>
+                        <p class="notInclude"><img src="../images/dinner_dining.svg" alt=""> Repas spaciaux gastronomique</p>
+                        <p class="notInclude"><img src="../images/premiumClass.svg" alt=""> Cabine individuelle avec hublot panoramique</p>
+                    </div>
+                    <!-- FORMULE GALAXY -->
+                    <div class="individualCard">
+                        <h3>FORMULE GALAXIE</h3>
+                        <p class="include"><img src="../images/planet.svg" alt=""> Vol surobitale (franchir la ligne de Karman)</p>
+                        <p class="include"><img src="../images/orbit.svg" alt=""> Séjour prolongé en orbite terreste</p>
+                        <p class="include"><img src="../images/attractions.svg" alt=""> Activité en apesanteur (marche flotté, jeux spatiaux)</p>
+                        <p class="include"><img src="../images/gifts.svg" alt=""> Cadeau souvenir (poussière de la planète, etc)</p>
+                        <p class="include"><img src="../images/binocular.svg" alt=""> Observation astronomique guidée</p>
+                        <p class="include"><img src="../images/learning.svg" alt=""> Formation prévol</p>
+                        <p class="include"><img src="../images/certificate.svg" alt=""> Certificat de vol cosmique</p>
+                        <p class="include"><img src="../images/dinner_dining.svg" alt=""> Repas spaciaux gastronomique</p>
+                        <p class="include"><img src="../images/premiumClass.svg" alt=""> Cabine individuelle avec hublot panoramique</p>
+                    </div>
+                </div>
+             </section>
         </section>
     <div class="anchor">
         <a href="#anchor"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M440-320h80v-168l64 64 56-56-160-160-160 160 56 56 64-64v168Zm40 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></a>

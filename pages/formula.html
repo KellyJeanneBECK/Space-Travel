@@ -15,23 +15,35 @@
           <img class="logo" id="anchor" src="../images/logo.png" alt="space-travel logo">
         </div>
         <div class="headerNav">
-            <nav>
+            <nav class="nav-desktop">
                 <ul>
                     <li><a href="#">Accueil</a></li>
                     <li><a href="formula.html">Nos formules</a></li>
                     <li><a href="reservation.html">Réservation</a></li>
                 </ul>
             </nav>
+            <nav class="nav-mobile">
+            <input class="burger-input" type="checkbox" />
+            <button class="burger-btn">
+              <span class="first-line"></span>
+              <span class="second-line"></span>
+            </button>
+            <ul>
+              <li><a href="../index.html">Accueil</a></li>
+              <li><a href="#">Nos formules</a></li>
+              <li><a href="reservation.html">Réservation</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
     <!--FIN DU HEADER-->
     <main>
-        <h2 class="title-formula">Découvrez nos formules</h2> <!-- Titre formulaire-->
+        <h2 class="title-formula">Découvrez nos formules:</h2> <!-- Titre formulaire-->
 <!--------------------------START PRESENTATION DIFFERENTS VOYAGE-------------------------------->
     <section>
         <div class="section-description">
-            <div class="section">
+            <div id="mars-link" class="section">
                 <img src="../images/mars.jpg" alt="Mars">
                 <p class="description-img">Mars</p>
                 <input type="checkbox" id="toggle-desc" class="toggle-desc">
@@ -51,7 +63,7 @@
                     </p>  
                 </div>
             </div> 
-            <div class="section-venus">
+            <div id="venus-link" class="section-venus">
                 <img src="../images/venus.jpg" alt="Vénus">
                 <p class="description-img-venus">Vénus</p>
                 <input type="checkbox" id="toggle-desc-venus" class="toggle-desc-venus">
@@ -71,7 +83,7 @@
                     </p>
                 </div>
             </div>
-            <div class="section-mercury">
+            <div id="mercury-link" class="section-mercury">
                 <img src="../images/mercure.jpg" alt="Mercure">
                 <p class="description-img-mercury">Mercure</p>
                 <input type="checkbox" id="toggle-desc-mercury" class="toggle-desc-mercury">
@@ -92,7 +104,7 @@
                     </p>
                 </div>
             </div>
-            <div class="section-sun">
+            <div id="sun-link" class="section-sun">
                 <img src="../images/sun.jpg" alt="Soleil">
                 <p class="description-img-sun">Soleil</p>
                 <input type="checkbox" id="toggle-desc-sun" class="toggle-desc-sun">
@@ -121,7 +133,7 @@
 <!------------ Section avec le tableaux des formules proposées --------->
         <section class="formule">
             <!-- Tableau formule-->
-             <h2>DECOUVREZ NOS FORMULES</h2>
+             <h2>Comparatif des différentes formules:</h2>
              <!-- VERSION DESKTOP-->
             <section class="formuleChartDesktop"> 
                 <table>

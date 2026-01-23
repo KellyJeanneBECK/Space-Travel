@@ -21,7 +21,7 @@
 * {
   font-family: "Orbit", serif;
 }
-.logo{
+.logo {
   width: 10%;
 }
 /*DEBUT DU HEADER*/
@@ -119,7 +119,10 @@ li {
   gap: 10px;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  font-family: "Prompt", serif;
+  font-weight: 300;
+  font-style: italic;
 }
 .section-description img {
   width: 15vw;
@@ -318,7 +321,6 @@ h2 {
   width: 100%;
 }
 .formule h2 {
-  font-weight: bolder;
   text-align: center;
 }
 table {
@@ -421,18 +423,18 @@ button:hover {
   margin-top: 15px;
   text-align: center;
 }
-footer a{
+footer a {
   display: flex;
   align-items: center;
 }
 /*FIN FOOTER*/
 /*MEDIA QUERIES*/
-@media screen and (max-width:800px){
+@media screen and (max-width: 800px) {
   /*-------------LOGO Responsive--------*/
-  .logo-nav{
+  .logo-nav {
     width: 50%;
   }
-  .logo{
+  .logo {
     display: none;
   }
   /*-------------FIN LOGO Responsive--------*/
@@ -575,12 +577,12 @@ footer a{
     min-width: 80vw;
     border-radius: 15px;
   }
-    /*-------------Début LOGO Responsive mobile--------*/
-  .logo-nav{
+  /*-------------Début LOGO Responsive mobile--------*/
+  .logo-nav {
     width: 50%;
   }
-  .logo{
+  .logo {
     display: none;
   }
-    /*-------------FIN LOGO Responsive mobile--------*/
+  /*-------------FIN LOGO Responsive mobile--------*/
 }

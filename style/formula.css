@@ -421,6 +421,10 @@ button:hover {
   margin-top: 15px;
   text-align: center;
 }
+footer a{
+  display: flex;
+  align-items: center;
+}
 /*FIN FOOTER*/
 /*MEDIA QUERIES*/
 @media screen and (max-width:800px){

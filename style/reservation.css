@@ -276,6 +276,9 @@ select option {
   margin-top: 15px;
   text-align: center;
 }
+footer a{
+  display: flex;
+}
 /*FIN FOOTER*/
 @media screen and (max-width: 800px) {
   /* DEBUT MENU BURGER */

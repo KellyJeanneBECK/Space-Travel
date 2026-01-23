@@ -246,6 +246,10 @@ select option {
     .logo{
         display: none;
     }
+    .logo-nav {
+    width: 5%;
+    margin: 0 auto;
+  }
 }
 /*DEBUT FOOTER*/
 .footer-social {
@@ -279,6 +283,7 @@ select option {
 footer a{
   display: flex;
 }
+
 /*FIN FOOTER*/
 @media screen and (max-width: 800px) {
   /* DEBUT MENU BURGER */
@@ -289,4 +294,9 @@ footer a{
     display: flex;
   }
   /* FIN MENU BURGER */
+  /* Tablette*/
+  .logo-nav {
+  width: 30%;
+  margin: 0 auto;
+  }
 }

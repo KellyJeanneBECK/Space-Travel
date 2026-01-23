@@ -33,8 +33,11 @@ body {
   flex-direction: column;
 }
 /*DEBUT DU HEADER*/
-a {
-  text-decoration: none;
+.logo{
+  width: 10%;
+}
+a{
+    text-decoration: none;
 }
 li {
   list-style-type: none;
@@ -238,6 +241,12 @@ select option {
   transform: scale(0.98);
 }
 /*FIN DU FORMULAIRE*/
+/*----------RESPONSIVE PORTABLE---------*/
+@media screen and (max-width:425px){
+    .logo{
+        display: none;
+    }
+}
 /*DEBUT FOOTER*/
 .footer-social {
   text-align: center;

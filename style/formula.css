@@ -21,6 +21,9 @@
 * {
   font-family: "Orbit", serif;
 }
+.logo{
+  width: 10%;
+}
 /*DEBUT DU HEADER*/
 a {
   text-decoration: none;
@@ -306,7 +309,6 @@ h2 {
   max-height: fit-content;
   padding: 15px;
 }
-
 /*------END PRESENTATION VOYAGE----*/
 /*------------ MISE EN FORME TABLEAU--------------*/
 .formule {
@@ -421,7 +423,15 @@ button:hover {
 }
 /*FIN FOOTER*/
 /*MEDIA QUERIES*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width:800px){
+  /*-------------LOGO Responsive--------*/
+  .logo-nav{
+    width: 50%;
+  }
+  .logo{
+    display: none;
+  }
+  /*-------------FIN LOGO Responsive--------*/
   /* DEBUT MENU BURGER */
   .nav-desktop {
     display: none;
@@ -561,4 +571,12 @@ button:hover {
     min-width: 80vw;
     border-radius: 15px;
   }
+    /*-------------Début LOGO Responsive mobile--------*/
+  .logo-nav{
+    width: 50%;
+  }
+  .logo{
+    display: none;
+  }
+    /*-------------FIN LOGO Responsive mobile--------*/
 }
